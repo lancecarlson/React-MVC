@@ -27,3 +27,7 @@ Here is a high level overview of what your project will look like:
 ## <FINE />
 
 This is so much cleaner and simpler than Flux. Enjoy.
+
+## Contributors
+
+https://github.com/lholden
