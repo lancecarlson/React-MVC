@@ -11,11 +11,22 @@ const fetchTodoLists = (page) => {
   }
 }
 
+const fetchTodoList = (id) => {
+  return () => {
+    return TodoList.find(id);
+  }
+}
+
+const deleteTodoList = (todoList) => {
+  return todoList.del();
+}
+
 export const list = (ctx) => {
   let page = ctx.params.page;
-  render(<TodoListTable onMount={fetchTodoLists(page)} />);
+  render(<TodoListTable fetchData={fetchTodoLists(page)} onDelete={deleteTodoList} />);
 }
 
 export const show = (ctx) => {
-  render(<TodoListDisplay />);
+  let id = ctx.params.id;
+  render(<TodoListDisplay defaultData={new TodoList()} fetchData={fetchTodoList(id)} />);
 }
