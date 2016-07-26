@@ -41,5 +41,5 @@ This is so much cleaner and simpler than Flux. Enjoy.
 
 ## Contributors
 
-https://github.com/lholden
-https://github.com/jordanskole
+* https://github.com/lholden
+* https://github.com/jordanskole
