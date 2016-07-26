@@ -19,10 +19,10 @@ Let's start with the dependencies. Grab these:
 
 Here is a high level overview of what your project will look like:
 
-- Routes: Using page.js, send your routes to actions. (See: [examples/todo/src/index.js](examples/todo/src/index.js))
-- Controllers: Use either basic es6 classes that extend from an ApplicationController, or just use more functional patterns
-- Models: You can use basic es6 classes or Immutable js, or something else. Models should call out to REST API services using the fetch API. No need to JQuery.
-- Views: Use React. Fetch the bare mininum data you need to render your components in a "loading" state. Identify the state that will change with data injection and stick that in constructor. Configure your lifecycle methods to account for state changes. I would try to abstract out as much of the data handling/modeling logic into controller/models as you can and just let the react components manage their component lifecycle.
+- Routes: Using page.js, send your routes to actions. Example: [examples/todo/src/index.js]
+- Controllers: Use either basic es6 classes that extend from an ApplicationController (Example: [examples/todo/src/controllers/welcome_controller.js]), or just use more functional patterns (Example: [examples/todo/src/controllers/todo_controller.js]). 
+- Models: You can use basic es6 classes or Immutable js, or something else. Models should call out to REST API services using the fetch API. No need to JQuery. Example: [examples/todo/src/models/todo_list.js]
+- Views: Use React. Fetch the bare mininum data you need to render your components in a "loading" state. Identify the state that will change with data injection and stick that in constructor. Configure your lifecycle methods to account for state changes. I would try to abstract out as much of the data handling/modeling logic into controller/models as you can and just let the react components manage their component lifecycle. Example: [examples/todos/components/todo.js]
 
 ## Installation & Examples
 
