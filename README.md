@@ -24,6 +24,17 @@ Here is a high level overview of what your project will look like:
 - Models: You can use basic es6 classes or Immutable js, or something else. Models should call out to REST API services using the fetch API. No need to JQuery.
 - Views: Use React. Fetch the bare mininum data you need to render your components in a "loading" state. Identify the state that will change with data injection and stick that in constructor. Configure your lifecycle methods to account for state changes. I would try to abstract out as much of the data handling/modeling logic into controller/models as you can and just let the react components manage their component lifecycle.
 
+## Installation & Examples
+
+```
+$ cd working-directory
+$ git clone https://github.com/lancecarlson/React-MVC.git
+$ cd React-MVC/examples/todo
+$ npm install
+$ npm install budo -g
+$ npm run dev
+```
+
 ## <FINE />
 
 This is so much cleaner and simpler than Flux. Enjoy.
