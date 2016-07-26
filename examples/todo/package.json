@@ -9,6 +9,7 @@
     "dev": "budo src/index.js --live --pushstate --verbose -o -- -t [ babelify --presets [ es2015 react ] ]"
   },
   "dependencies": {
+    "es6-promise": "^3.2.1",
     "html5-history-api": "^4.2.7",
     "immutable": "^3.8.1",
     "page": "^1.7.1",

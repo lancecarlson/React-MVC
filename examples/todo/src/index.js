@@ -1,6 +1,8 @@
 /* Polyfills */
 import 'whatwg-fetch';
 import 'html5-history-api';
+import es6promise from 'es6-promise';
+es6promise.polyfill();
 
 import page from 'page';
 
