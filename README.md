@@ -35,7 +35,7 @@ $ npm install budo -g
 $ npm run dev
 ```
 
-## <FINE />
+## ```<FINE />```
 
 This is so much cleaner and simpler than Flux. Enjoy.
 
